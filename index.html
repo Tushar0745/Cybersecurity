@@ -581,7 +581,7 @@ window.openCourse = openCourse; window.completeModule = completeModule; window.o
 </script>
 <script>
 function updateVisitorCounter() {
-  fetch('https://api.countapi.xyz/hit/socanalyst.bitbytes/visits')
+  fetch('https://api.countapi.xyz/hit/tushar0745_github/socanalyst')
     .then(res => res.json())
     .then(data => {
       document.getElementById('visitorCounter').innerText =
@@ -589,10 +589,11 @@ function updateVisitorCounter() {
     })
     .catch(() => {
       document.getElementById('visitorCounter').innerText =
-        "Visitors: (offline)";
+        "Visitors: offline";
     });
 }
 updateVisitorCounter();
 </script>
+  
 </body>
 </html>
