@@ -234,10 +234,10 @@ textarea{min-height:100px}
 </div>
 
   <div class="footer">
-  © SOCanalyst — Modules & quizzes saved locally in your browser.
-  <br>
-  <img src="https://hitwebcounter.com/counter/counter.php?page=1234567&style=0010&nbdigits=5&type=page&initCount=0" 
-       title="Web Counter" alt="hits counter" border="0">
+    © SOCanalyst — Modules & quizzes saved locally in your browser.
+    <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=10584242&style=0008&nbdigits=6&type=ip&initCount=0" 
+         title="Visitor Counter" alt="Visitor Counter" border="0">
   </div>
 
 
@@ -580,18 +580,6 @@ function escapeHtml(unsafe) {
 
 /* expose some functions for inline use */
 window.openCourse = openCourse; window.completeModule = completeModule; window.openModuleDetail = openModuleDetail; window.startQuiz = startQuiz; window.submitQuiz = submitQuiz; window.requestCertificate = requestCertificate; window.sendFeedback = sendFeedback; window.saveModules = saveModules; window.adminAddModule = adminAddModule; window.loadModulesForAdmin = loadModulesForAdmin; window.saveQuizFromAdmin = saveQuizFromAdmin; window.renderAdminQuizEditor = renderAdminQuizEditor; window.adminAddQuestion = adminAddQuestion; window.openAdmin = openAdmin; window.showHome = showHome; window.showCourses = showCourses; window.showCertRequest = showCertRequest;
-</script>
-<script>
-async function updateVisitorCounter() {
-  try {
-    const res = await fetch("https://counterapi.dev/api/SOCanalyst/visits/incr");
-    const data = await res.json();
-    document.getElementById("visitorCounter").innerText = "Visitors: " + data.count;
-  } catch (e) {
-    document.getElementById("visitorCounter").innerText = "Visitors: offline";
-  }
-}
-updateVisitorCounter();
 </script>
   
 </body>
