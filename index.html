@@ -234,7 +234,7 @@ textarea{min-height:100px}
 </div>
 
 <div class="footer">
-    <div id="visitorCounter">Loading visitors...</div>
+    <div id="visitorCounter" style="margin-top:6px;font-size:12px;color:#666;">Loading visitors...</div>
   © SOCanalyst — Modules & quizzes saved locally in your browser.
 </div>
 
@@ -581,7 +581,7 @@ window.openCourse = openCourse; window.completeModule = completeModule; window.o
 </script>
 <script>
 function updateVisitorCounter() {
-  fetch('https://api.countapi.xyz/hit/tushar0745_github/socanalyst')
+  fetch('https://api.countapi.xyz/hit/soc-analyst.dev/visitors')
     .then(res => res.json())
     .then(data => {
       document.getElementById('visitorCounter').innerText =
